@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dictionary Project</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="search__content">
+				<h2 class="logo">Dictionary</h2>
+				<input class="search__bar" type="text" placeholder="Search here"/>
+				<button class="fa fa-search"></button>
+
+			</div>
+		</div>
+		<div class="result__container hidden">
+			<div class="previous__page">
+				<button class="previous__btn"><i class="fa fa-chevron-left"></i>Search</button>
+			</div>
+			<h1 class="search__text">Text</h1>
+			<div class="pronounce">
+				<span class="phonetics__text">//</span>
+				<button class="fa fa-volume-up"></button>
+				<audio src=""></audio>
+			</div>
+
+			<div class="type__container">
+				<button data-type="noun" class="type__btn active">noun</button>
+				<button data-type="verb" class="type__btn">verb</button>
+				<button data-type="interjection" class="type__btn">interjection</button>
+			</div>
+			<!-- NOUN SECTION -->
+			<div class="content clear noun active__content">
+				<div class="definition">
+					<div class="main__text">
+						<h3>DEFINITIONS <span class="noun_num"></span></h3> 
+					</div>
+					<div class="noun__definition__text"></div>
+				</div>
+				<div class="noun__word__example">
+
+				</div>
+			</div>
+			<!-- VERB SECTION -->
+			<div class="content clear verb">
+				<div class="definition">
+					<div class="main__text">
+						<h3>DEFINITIONS <span class="verb__num"></span></h3> 
+					</div>
+					<div class="verb__definition__text">
+					</div>
+				</div>
+				<div class="verb__word__example">
+				</div>
+			</div>
+			<!-- INTERJECTION SECTION -->
+			<div class="content interjection clear ">
+				<div class="definition">
+					<div class="main__text">
+						<h3>DEFINITIONS <span class="inter__num"></span></h3> 
+					</div>
+					<div class="definition__text"></div>
+				</div>
+				<div class="inter__word__example"></div>
+			</div>
+		</div>
+		<div class="error__container hidden">
+			<h1>Couldn't find word</h1>
+			<button class="error__btn">Go Back</button>
+		</div>
+		</div>
+		<footer>Built with &hearts; by <a href="https://kingjoshua.netlify.app">KingJoshua</a></footer>
+		<script src="app.js"></script>
+	</body>
+</html>
