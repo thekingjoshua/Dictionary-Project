@@ -201,6 +201,17 @@ button.fa-volume-up {
 	border-radius: 0.5rem;
 	border: 0.2rem black;
 }
+footer{
+position: absolute;
+bottom:7%;
+width:100%;
+text-align: center;
+color: var(--theme-color);
+font-size: 1.5rem;
+}
+footer a{
+text-decoration:none;
+}
 @media only screen and (min-width: 360px) {
 	.container {
 		height: 90vh;
