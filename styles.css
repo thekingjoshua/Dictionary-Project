@@ -220,6 +220,9 @@ footer a {
 		padding: 1.4rem;
 		width: 85%;
 	}
+        button.fa-search {
+		top: 26%;
+	}
 }
 @media only screen and (min-width: 375px) {
 	.container {
